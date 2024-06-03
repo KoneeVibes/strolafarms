@@ -9,6 +9,6 @@ export type HeroPropsType = {
 export type IntroPropsType = {
     introImg: React.ReactNode,
     introLead: string,
-    introBody: string,
+    introBody: string[],
     url?: string,
 }
