@@ -11,6 +11,7 @@ export const BaseButton = styled(Button)(
         backgroundColor: "#009933",
         borderRadius: "40px",
         padding: "0.8125rem 2.7rem",
+        minWidth: 0,
         "&:hover": {
             backgroundColor: "#009933",
         }

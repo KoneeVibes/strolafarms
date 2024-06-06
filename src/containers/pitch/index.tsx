@@ -1,5 +1,5 @@
 import { Box, Stack, Typography } from "@mui/material";
-import { Intro } from "../intro";
+import { Intro } from "../../components/intro";
 import { IntroImg } from "../../assets/home";
 import { Greenstar, Yellowstar } from "../../assets";
 import { PitchBox } from "./styled";
@@ -45,7 +45,7 @@ export const Pitch = () => {
                             fontFamily={"Inter"}
                             fontWeight={400}
                             fontSize={{ mobile: 16 }}
-                            lineHeight={"normal"}
+                            lineHeight={"24px"}
                             whiteSpace={"normal"}
                         >
                             As the custodians of livestock, we never compromise on quality, safety, and prompt delivery of our animals and grains.

@@ -1,4 +1,4 @@
-import { Intro } from "../intro";
+import { Intro } from "../../components/intro";
 import { IntroImg } from "../../assets/about";
 import { Greenstar, Yellowstar } from "../../assets";
 import { AboutBox } from "./styled";

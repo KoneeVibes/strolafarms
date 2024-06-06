@@ -1,6 +1,8 @@
 import { Container } from "@mui/material";
-import { Header } from "../../containers/header";
+import { Header } from "../../components/header";
 import { HeroImg } from "../../assets/product";
+import { Delivery } from "../../components/delivery";
+import { Footer } from "../../components/footer";
 
 export const Product = () => {
     return (
@@ -15,6 +17,8 @@ export const Product = () => {
                 heroBody="Experience the taste and quality of our sustainably raised livestock"
                 heroImg={<HeroImg />}
             />
+            <Delivery />
+            <Footer />
         </Container>
     )
 }

@@ -1,7 +1,9 @@
 import { Container } from "@mui/material";
-import { Header } from "../../containers/header";
+import { Header } from "../../components/header";
 import { HeroImg } from "../../assets/about/index";
 import { About } from "../../containers/about/index";
+import { Delivery } from "../../components/delivery";
+import { Footer } from "../../components/footer";
 
 export const AboutUs = () => {
     return (
@@ -17,6 +19,8 @@ export const AboutUs = () => {
                 heroImg={<HeroImg />}
             />
             <About />
+            <Delivery />
+            <Footer />
         </Container>
     )
 }

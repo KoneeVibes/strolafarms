@@ -1,7 +1,10 @@
 import { Container } from "@mui/material";
-import { Header } from "../../containers/header";
+import { Header } from "../../components/header";
 import { HeroImg } from "../../assets/home";
 import { Pitch } from "../../containers/pitch";
+import { Products } from "../../containers/products";
+import { Delivery } from "../../components/delivery";
+import { Footer } from "../../components/footer";
 
 export const Home = () => {
     return (
@@ -17,6 +20,9 @@ export const Home = () => {
                 heroImg={<HeroImg />}
             />
             <Pitch />
+            <Products />
+            <Delivery />
+            <Footer />
         </Container>
     )
 }
