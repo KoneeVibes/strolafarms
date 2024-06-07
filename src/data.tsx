@@ -1,4 +1,5 @@
 import { Cows, Goats, Pigs, Poultry, Snail } from "./assets/home";
+import { Innovation, Passion, Quality, Reliability, Safety, Sustainability } from "./assets/product";
 
 export const navLinks = [
     {
@@ -67,4 +68,31 @@ export const contactDetails = {
     "Phone:": " +2348072447626",
     "Email:": " info@dalortsengineering.com",
     "Address:": " Palace Road, Oniru, Lagos.",
-}
+};
+
+export const coreValues = [
+    {
+        icon: <Quality />,
+        name: "Quality"
+    },
+    {
+        icon: <Safety />,
+        name: "Safety"
+    },
+    {
+        icon: <Innovation />,
+        name: "Innovation"
+    },
+    {
+        icon: <Passion />,
+        name: "Passion"
+    },
+    {
+        icon: <Sustainability />,
+        name: "Sustainability"
+    },
+    {
+        icon: <Reliability/>,
+        name: "Reliability"
+    }
+]

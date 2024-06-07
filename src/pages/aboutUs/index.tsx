@@ -4,6 +4,7 @@ import { HeroImg } from "../../assets/about/index";
 import { About } from "../../containers/about/index";
 import { Delivery } from "../../components/delivery";
 import { Footer } from "../../components/footer";
+import { CoreValues } from "../../containers/coreValues";
 
 export const AboutUs = () => {
     return (
@@ -19,6 +20,7 @@ export const AboutUs = () => {
                 heroImg={<HeroImg />}
             />
             <About />
+            <CoreValues />
             <Delivery />
             <Footer />
         </Container>
