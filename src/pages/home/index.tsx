@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { Container } from "@mui/material";
 import { Header } from "../../components/header";
 import { HeroImg } from "../../assets/home";
@@ -7,6 +8,7 @@ import { Delivery } from "../../components/delivery";
 import { Footer } from "../../components/footer";
 
 export const Home = () => {
+    const footerRef = useRef(null);
     return (
         <Container
             maxWidth={false}
@@ -18,11 +20,12 @@ export const Home = () => {
                 heroLead="Experience the Best of Livestock Farming"
                 heroBody="Your One-Stop Shop for Healthy, Sustainable, and Fresh Produce"
                 heroImg={<HeroImg />}
+                footerRef={footerRef}
             />
             <Pitch />
             <Products />
             <Delivery />
-            <Footer />
+            <Footer footerRef={footerRef} />
         </Container>
     )
 }

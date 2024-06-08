@@ -4,10 +4,13 @@ import { Arrow, Strola } from "../../assets";
 import { BaseButton } from "../button";
 import { contactDetails, footerLinks } from "../../data";
 import { HashLink } from "react-router-hash-link";
+import { FooterRefType } from "../../types/app.type";
 
-export const Footer = () => {
+export const Footer: React.FC<FooterRefType> = ({ footerRef }) => {
     return (
-        <FooterStack>
+        <FooterStack
+            ref={footerRef}
+        >
             <Box
                 flex={0.4}
             >

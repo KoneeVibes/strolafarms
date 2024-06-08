@@ -17,7 +17,7 @@ export const CoreValues = () => {
                     whiteSpace={"normal"}
                     textAlign={"center"}
                 >
-                    Our Products
+                    Our Core Values
                 </Typography>
                 <Typography
                     variant="body1"
@@ -29,7 +29,7 @@ export const CoreValues = () => {
                     marginBlock={"1rem"}
                     textAlign={"center"}
                 >
-                    Explore Our Range of High-Quality Livestock Products
+                    The best of livestock farming.
                 </Typography>
             </Stack>
             <Grid

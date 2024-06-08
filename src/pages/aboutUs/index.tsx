@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { Container } from "@mui/material";
 import { Header } from "../../components/header";
 import { HeroImg } from "../../assets/about/index";
@@ -7,6 +8,7 @@ import { Footer } from "../../components/footer";
 import { CoreValues } from "../../containers/coreValues";
 
 export const AboutUs = () => {
+    const footerRef = useRef(null);
     return (
         <Container
             maxWidth={false}
@@ -18,11 +20,12 @@ export const AboutUs = () => {
                 heroLead="Where Livestock farming meets Excellence"
                 heroBody="Learn about our journey, values, and commitment to sustainable livestock farming"
                 heroImg={<HeroImg />}
+                footerRef={footerRef}
             />
             <About />
             <CoreValues />
             <Delivery />
-            <Footer />
+            <Footer footerRef={footerRef} />
         </Container>
     )
 }

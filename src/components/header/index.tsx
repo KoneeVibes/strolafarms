@@ -1,13 +1,13 @@
 import { Greenstar } from "../../assets";
 import { Hero } from "../hero";
 import { Navbar } from "../navigation";
-import { HeroPropsType } from "../../types/app.type";
+import { HeaderPropsType } from "../../types/app.type";
 import { HeaderBox } from "./styled";
 
-export const Header: React.FC<HeroPropsType> = ({ heroLead, heroBody, heroImg }) => {
+export const Header: React.FC<HeaderPropsType> = ({ heroLead, heroBody, heroImg, footerRef }) => {
     return (
         <HeaderBox>
-            <Navbar />
+            <Navbar footerRef={footerRef} />
             <Hero
                 heroLead={heroLead}
                 heroBody={heroBody}

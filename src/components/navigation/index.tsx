@@ -7,8 +7,9 @@ import { BaseButton } from "../button";
 import { Menu } from "../button/menu";
 import { useContext } from "react";
 import { Context } from "../../context";
+import { FooterRefType } from "../../types/app.type";
 
-export const Navbar: React.FC<{}> = () => {
+export const Navbar: React.FC<FooterRefType> = ({ footerRef }) => {
     const navigate = useNavigate();
     const { setOpenMenu } = useContext(Context);
     const handleLogoClick = () => {
@@ -66,7 +67,9 @@ export const Navbar: React.FC<{}> = () => {
                     justifyContent={{ miniTablet: "center" }}
                     overflow={"hidden"}
                 >
-                    <BaseButton>
+                    <BaseButton
+                        onClick={() => footerRef?.current?.scrollIntoView({ behavior: "smooth" })}
+                    >
                         <Typography
                             variant="button"
                             fontFamily={"inherit"}
