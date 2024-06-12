@@ -17,7 +17,8 @@ export type IntroPropsType = {
     introImg: React.ReactNode,
     introLead: string,
     introBody: string[],
-    url?: string,
+    url: string,
+
 }
 
 export type FooterRefType = {

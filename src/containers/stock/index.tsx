@@ -4,7 +4,9 @@ import { stock } from "../../data";
 
 export const Stock = () => {
     return (
-        <StockBox>
+        <StockBox
+            id="stock"
+        >
             <Stack
                 overflow={"hidden"}
             >
@@ -39,6 +41,8 @@ export const Stock = () => {
                     return (
                         <Box
                             key={key}
+                            component={"div"}
+                            id={stockItem.url}
                         >
                             <Box
                                 sx={{

@@ -21,31 +21,31 @@ export const products = [
         img: <Goats />,
         name: "Goat & Rams",
         body: "Explore Our Range of High-Quality Livestock Products",
-        url: "",
+        url: "goatAndRams",
     },
     {
         img: <Cows />,
         name: "Cow and cattle",
         body: "We continuously satisfy our customers' farming requirements for high-quality, fresh cow meats",
-        url: "",
+        url: "cows",
     },
     {
         img: <Snail />,
         name: "Snail",
         body: "All breeds of snails are reared at Strola Farms",
-        url: "",
+        url: "snail",
     },
     {
         img: <Pigs />,
         name: "Pigs",
         body: "We raise our pigs with care and attention to detail, ensuring a tender and juicy meat experience. ",
-        url: "",
+        url: "pigs",
     },
     {
         img: <Poultry />,
         name: "Poultry",
         body: "Strola Farms' poultry products are a staple for any kitchen! Our chickens are raised in a healthy and sustainable environment.",
-        url: "",
+        url: "poultry",
     },
 ];
 
@@ -100,6 +100,7 @@ export const coreValues = [
 export const stock = [
     {
         animal: "Cattle",
+        url: "cows",
         img: <Cattle />,
         variants: [
             {
@@ -122,6 +123,7 @@ export const stock = [
     },
     {
         animal: "Rams",
+        url: "rams",
         img: <Rams />,
         variants: [
             {
@@ -144,6 +146,7 @@ export const stock = [
     },
     {
         animal: "Goats",
+        url: "goat",
         img: <Goat />,
         variants: [
             {
@@ -158,6 +161,7 @@ export const stock = [
     },
     {
         animal: "Poultry",
+        url: "poultry",
         img: <PoultryProduce />,
         variants: [
             {
@@ -176,6 +180,7 @@ export const stock = [
     },
     {
         animal: "Pigs",
+        url: "pigs",
         img: <Pig />,
         variants: [
             {

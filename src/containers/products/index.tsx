@@ -2,6 +2,7 @@ import { Box, Card, CardActions, CardContent, Grid, Stack, Typography } from "@m
 import { ProductsBox } from "./styled";
 import { BaseButton } from "../../components/button";
 import { products } from "../../data";
+import { HashLink } from "react-router-hash-link";
 
 export const Products = () => {
     return (
@@ -89,21 +90,26 @@ export const Products = () => {
                                         overflow={"hidden"}
                                         display={"flex"}
                                     >
-                                        <BaseButton>
-                                            <Typography
-                                                variant="button"
-                                                fontFamily={"inherit"}
-                                                fontWeight={"inherit"}
-                                                fontSize={"inherit"}
-                                                lineHeight={"inherit"}
-                                                color={"inherit"}
-                                                textTransform={"inherit"}
-                                                whiteSpace={"normal"}
-                                                width={"100%"}
-                                            >
-                                                See more
-                                            </Typography>
-                                        </BaseButton>
+                                        <HashLink
+                                            to={`/product#${product.url}`}
+                                            smooth={true}
+                                        >
+                                            <BaseButton>
+                                                <Typography
+                                                    variant="button"
+                                                    fontFamily={"inherit"}
+                                                    fontWeight={"inherit"}
+                                                    fontSize={"inherit"}
+                                                    lineHeight={"inherit"}
+                                                    color={"inherit"}
+                                                    textTransform={"inherit"}
+                                                    whiteSpace={"normal"}
+                                                    width={"100%"}
+                                                >
+                                                    See more
+                                                </Typography>
+                                            </BaseButton>
+                                        </HashLink>
                                     </Box>
                                 </CardActions>
                             </Card>

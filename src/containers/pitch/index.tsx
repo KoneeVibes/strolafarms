@@ -59,6 +59,7 @@ export const Pitch = () => {
                 introImg={<IntroImg />}
                 introLead="Our Story"
                 introBody={["Strola Farms is an indigenous livestock farm. We are located in Lagos, Oyo, and Kwara state. We supply quality produce using a streamlined approach to farming that’s both cost-effective and sustainable. Our extensive operation integrates a seamless model for livestock, grains and leaves"]}
+                url="/about"
             />
             <Greenstar className="greenStar" />
         </PitchBox>

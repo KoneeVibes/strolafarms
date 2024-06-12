@@ -2,8 +2,9 @@ import { Box, Typography } from "@mui/material";
 import { IntroStack } from "./styled";
 import { IntroPropsType } from "../../types/app.type";
 import { BaseButton } from "../button";
+import { HashLink } from "react-router-hash-link";
 
-export const Intro: React.FC<IntroPropsType> = ({ introImg, introLead, introBody }) => {
+export const Intro: React.FC<IntroPropsType> = ({ introImg, introLead, introBody, url }) => {
     return (
         <IntroStack>
             <Box
@@ -48,23 +49,28 @@ export const Intro: React.FC<IntroPropsType> = ({ introImg, introLead, introBody
                     display={"flex"}
                     overflow={"hidden"}
                 >
-                    <BaseButton
-                        sx={{
-                            marginBlock: { mobile: "1rem", laptop: "4rem" },
-                        }}
+                    <HashLink
+                        to={url ? url : ""}
+                        smooth
                     >
-                        <Typography
-                            variant="button"
-                            fontFamily={"inherit"}
-                            fontWeight={"inherit"}
-                            fontSize={"inherit"}
-                            lineHeight={"inherit"}
-                            color={"inherit"}
-                            textTransform={"inherit"}
+                        <BaseButton
+                            sx={{
+                                marginBlock: { mobile: "1rem", laptop: "4rem" },
+                            }}
                         >
-                            Read more
-                        </Typography>
-                    </BaseButton>
+                            <Typography
+                                variant="button"
+                                fontFamily={"inherit"}
+                                fontWeight={"inherit"}
+                                fontSize={"inherit"}
+                                lineHeight={"inherit"}
+                                color={"inherit"}
+                                textTransform={"inherit"}
+                            >
+                                Read more
+                            </Typography>
+                        </BaseButton>
+                    </HashLink>
                 </Box>
             </Box>
         </IntroStack>

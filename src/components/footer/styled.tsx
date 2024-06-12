@@ -7,7 +7,7 @@ export const FooterStack = styled(Stack)(
             gap: "calc(2 * var(--flexGap))",
             flexDirection: "row",
             alignItems: "baseline",
-            padding: "calc(2 * var(--sectionMargin)) var(--pagePadding)",
+            padding: "calc(3 * var(--sectionMargin)) var(--pagePadding)",
         },
         "& a": {
             textDecoration: "none",
